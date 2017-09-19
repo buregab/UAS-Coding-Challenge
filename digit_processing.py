@@ -33,7 +33,5 @@ clf.fit(training_data, training_labels)
 predictions = clf.predict(testing_data)
 score = clf.score(testing_data, testing_labels)
 
-print(predictions)
-print(testing_labels)
-print(score)
+print('The total error rate is: ' + str(int(score*100)) + '%')
 # when running this I got a score of 0.973572938689
