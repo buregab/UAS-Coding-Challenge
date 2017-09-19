@@ -27,7 +27,7 @@ for file_name in os.listdir(testing_dir):
     label = file_name.split('_')[0]
     testing_labels.append(label)
 
-# fit and predict using an SMV model
+# fit and predict using an SVM model
 clf = SVC()
 clf.fit(training_data, training_labels)
 predictions = clf.predict(testing_data)
